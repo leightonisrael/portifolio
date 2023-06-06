@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Oswald:wght@200&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    scroll-behavior: smooth;
+    
+}
+/*----------------------MENU------------------*/
+
+.menu {
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.menu:target {
+    background-color: black; /* Cor de fundo transparente */
+}
+
+.menu > ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+
+a:hover{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#logo{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#guia {
+    display: flex;
+}
+
+#guia > li > a{
+    padding: 10px;
+    
+}
+
+#redeSocial {
+    display: flex;
+    justify-content: space-around;
+}
+
+#redeSocial > li > a {
+    padding: 10px;
+}
+
+/*----------------------HOME------------------*/
+
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 650px;
+    width: 100%;
+    background-image: url('../images/background_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#profile_text {
+    padding-right: 50px;
+
+}
+#profile_text > h1 {
+    color: aqua;
+    background-color: rgba(0, 0, 0, 0.250);
+    font-family: 'Major Mono Display', monospac;
+    font-size: 40px;
+    
+}
+
+#profile_text > span, #profile_text > p {
+    display: inline-flex;
+    background-color: #a6b6b6a8;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+#home .line {
+    border-right: 0.2rem solid  white;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+#home .typing {
+    animation: line-typing 500ms steps(40) infinite normal,
+    typing 3s steps(40) 1.4s normal backwards;
+}
+
+#profile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    
+}
+
+#profile_foto {
+    border-radius: 50%;
+    background-color:rgba(0, 0, 0, 0.200) ;
+    border: 2px solid rgba(0, 0, 0, 0.600);
+    height: 400px;
+    width: 400px; 
+    overflow: hidden;
+}
+
+#profile_foto > img {
+    display: block;
+    margin: auto;
+    
+    height: 100%;
+    width: 100%;
+}
+#profile_foto:hover {
+    transform: scale(1.05);
+    transition: .7s;
+}
+
+@keyframes typing {
+from {
+    width: 0;
+}
+to {
+    width: 24.5rem;
+}
+}
+
+@keyframes line-typing {
+from {
+    border-right-color: white;
+}
+to {
+    border-right-color: transparent;
+}
+}
+
+
+/*--------------------------SOBRE MIM-------------------*/
+
+
+#sobre_mim {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../images/background_2.jpg');
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    transition: 600ms;
+}
+
+#foto_pc {
+    background-color: rgba(0, 0, 0, 0.359) ;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.426);
+    box-shadow: 0px 0px 4px black;
+}
+
+#foto_pc > img {
+    padding-top: 15%;
+    width: 100%;
+    
+}
+#foto_pc:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#caixa_pessoal {
+    float: left;
+    height: 500px;
+    max-width: 600px;
+}
+
+#titulo_pessoal {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 40px;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+}
+
+#texto_pessoal {
+    background-color: rgba(0, 0, 0, 0.359);
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    margin: 0px 40px 40px 20px ;
+    font-family:"DM Sans", sans-serif ;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+/*----------------------CONHECIMENTOS------------------*/
+
+#conhecimentos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 625px;
+    width: 100%;
+    background-image: url('../images/background_3.jpg');
+    background-position: cover ;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    transition: 1s;
+    text-shadow: 1px 1px 1px black;
+}
+
+#conhecimentos > h2 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+}
+
+#containers {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+#containers > div {
+    height: 100%;
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.537);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 10px ;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.713);
+}
+
+#containers > div:hover {
+    transform: scale(1.04);
+    transition: 1s;
+}
+
+#containers > div > img {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#containers > div > h4 {
+    color: white;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+#containers > div > p {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 20px;
+    text-align: justify;
+    color: aqua;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 1300px) {
+    
+    #conhecimentos {
+        height: 100%;
+        padding-bottom: 50px;
+    }
+    #containers {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        grid-gap: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+
+    #home {
+        display: flex;
+    }
+
+    #profile_foto {
+        height: 320px;
+        width: 320px;
+    }
+
+    #profile_foto > img{
+        height: 100%;
+        width: 100%;
+
+    }
+
+    #sobre_mim{
+        padding-left: 20px;
+        padding-top: 30px;
+        height: 100%;
+    }
+
+    #foto_pc {
+        height: 320px;
+        width: 320px;
+        overflow: hidden;
+    }
+
+    #foto_pc > img {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    #foto_pc:hover {
+        transform: scale(1.05);
+        transition: 1s;
+    }
+
+    #texto_pessoal {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 957px) {
+
+    #profile {
+        display: grid;
+        margin: auto;
+        padding-top: 70px;
+        padding-bottom: 50px;
+        transition: 600ms;
+    }
+
+     #profile_foto {
+        margin: auto;
+    }
+
+    #sobre_mim{
+        padding-top: 75px;
+    }
+
+
+}
