@@ -16,27 +16,31 @@ body {
 /*----------------------MENU------------------*/
 
 .menu {
-    position: absolute;
     position: fixed;
     width: 100%;
+    height: 55px;
     font-family: 'Oswald', sans-serif;
     background-color: rgba(0, 0, 0, 0.45);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 55px;
     z-index: 100;
-    transition: background-color 0.3s ease;
 }
 
-.menu:target {
-    background-color: black; /* Cor de fundo transparente */
+#logo {
+    padding-left: 50px;
 }
 
-.menu > ul {
+.menu > nav >ul {
     list-style: none;
 }
 
+#menuBurguer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
 a {
     text-decoration: none;
     color: white;
@@ -71,6 +75,9 @@ a:hover{
     padding: 10px;
 }
 
+#burguer{
+    visibility: hidden;
+}
 /*----------------------HOME------------------*/
 
 #home {
@@ -399,6 +406,60 @@ to {
 }
 
 @media screen and (max-width: 750px) { 
+
+    #burguer {
+        visibility: visible;
+        cursor: pointer;
+        color: white;
+    }
+
+    #menu {
+        display: flex;
+        padding-left: 20px;
+        margin-right: 20px;
+        
+    }
+
+    #logo {
+        padding-left: 0px;
+    }
+    
+    #menuBurguer {
+        width: 100%;
+        display: none;
+        margin-top: 240px;
+        
+        transform: translateY(100%);
+        transition: transform 1s;
+    }
+
+    #guia {
+        display: block;
+        text-align: center;
+        margin-top: 115px;
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+
+    #guia > li {
+        border: 1px solid rgba(255, 255, 255, 0.452);
+        height: 50px;
+        padding-top: 7px ;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #redeSocial {
+        border: 1px solid rgba(255, 255, 255, 0.452);
+        background-color: rgba(0, 0, 0, 0.45);
+        justify-content: center;
+        height: 50px;
+        padding-top: 7px ;
+    }
+
+    
+
+
 
     #titulo_pessoal{
         font-size: 35px;
