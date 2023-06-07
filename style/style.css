@@ -239,15 +239,17 @@ to {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    background-image: url('../images/background_3.jpg');
     height: 625px;
     width: 100%;
-    background-image: url('../images/background_3.jpg');
-    background-position: cover ;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     padding-top: 120px;
     transition: 1s;
     text-shadow: 1px 1px 1px black;
 }
+
 
 #conhecimentos > h2 {
     color: white;
@@ -298,6 +300,23 @@ to {
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
+/*-------------------------PROJETOS---------------------------*/
+
+#projetos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/background_4.jpg');
+    height: 625px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 @media screen and (max-width: 1300px) {
     
@@ -377,6 +396,62 @@ to {
     #sobre_mim{
         padding-top: 75px;
     }
+}
 
+@media screen and (max-width: 750px) { 
+
+    #titulo_pessoal{
+        font-size: 35px;
+    }
+
+    #texto_pessoal {
+        font-size: 20px;
+    }
+
+    #conhecimentos {
+        height: 100%;
+        padding-top: 35px;
+        padding-bottom: 130px;
+    }
+
+    #conhecimentos > h2{
+        font-size: 35px;
+    }
+    #containers {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        grid-gap: 20px;
+        padding-top: 30px;
+        
+    }
+
+    #containers > div {
+        height: 100%;
+        width: 240px;
+        margin: 10px ;
+    }
+    
+    
+    #containers > div > img {
+        padding-left: 10px;
+        padding-top: 10px;
+        height: 100px;
+        width: 100px;
+    }
+    
+    #containers > div > h4 {
+        margin-top: 5px;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    
+    #containers > div > p {
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    
 
 }
