@@ -687,4 +687,13 @@ to {
         margin: 0px 40px 40px 20px ;
         font-size: 18px;
     }
+
+    #card {
+        height: 370px;
+        width: 320px;
+    }
+
+    #gif {
+        margin-left: 55px ;
+    }
 }
