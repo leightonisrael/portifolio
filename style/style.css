@@ -22,13 +22,13 @@ body {
     font-family: 'Oswald', sans-serif;
     background-color: #042326;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
 #logo {
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .menu > nav >ul {
@@ -38,42 +38,60 @@ body {
 #menuBurguer {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
 }
-a {
+#menuBurguer ul> li > a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     
 }
 
-a:hover{
+#menuBurguer ul> li > a:hover{
     color: rgb(200, 200, 200);
 }
 
 #logo{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
     font-size: 35px;
     font-weight: bold;
 }
 
+#logo2 {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    display: none;
+}
+
+#logo:hover, #logo2:hover {
+    color: rgb(200, 200, 200); ;
+}
 #guia {
     display: flex;
 }
 
-#guia > li > a{
+#guia > li {
     padding: 10px;
     
 }
 
 #redeSocial {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    
 }
 
 #redeSocial > li > a {
     padding: 10px;
-    margin: 5px;
+    margin: 6px;
 }
 #redeSocial > li > a > img {
     margin-left: 10px;
@@ -90,8 +108,15 @@ a:hover{
 }
 
 #burguer{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
     visibility: hidden;
 }
+
+
 /*----------------------HOME------------------*/
 
 #home {
@@ -238,7 +263,7 @@ to {
 }
 
 #texto_pessoal {
-    background-color: rgba(0, 0, 0, 0.359);
+    background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.537);
     box-shadow: 2px 2px 4px black;
     text-shadow: 2px 2px 2px black;
@@ -323,14 +348,83 @@ to {
 /*-------------------------PROJETOS---------------------------*/
 
 #projetos{
+    background-color: #0F5959;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+#projetos > h2 {
+    padding-top: 70px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+}
+
+#cards {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    background-color: #0F5959;
-    height: 625px;
-    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
+
+#card {
+    background-color:rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.537);
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+}
+
+#card > h3 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#card > div > h4 {
+    padding-top: 15px;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#card > div >p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#card > div img {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+#gif { 
+    background-image: url('../images/loading.png!bw700');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    margin-left: 75px ;
+}
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1300px) {
@@ -347,6 +441,7 @@ to {
         grid-gap: 40px;
     }
 
+    
 }
 
 @media screen and (max-width: 1100px){
@@ -414,7 +509,9 @@ to {
 }
 
 @media screen and (max-width: 750px) { 
-
+    #logo2 {
+        display: block;
+    }
     #burguer {
         visibility: visible;
         cursor: pointer;
@@ -435,18 +532,18 @@ to {
     #menuBurguer {
         width: 100%;
         display: none;
-        margin-top: 240px;
+        margin-top: 187px;
     }
 
     #guia {
         display: block;
         text-align: center;
         margin-top: 115px;
-        background-color: rgba(0, 0, 0, 0.45);
+        background-color: #042326;
     }
 
     #guia > li {
-        border: 1px solid rgba(255, 255, 255, 0.452);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         height: 50px;
         padding-top: 7px ;
         align-items: center;
@@ -455,16 +552,13 @@ to {
     }
 
     #redeSocial {
-        border: 1px solid rgba(255, 255, 255, 0.452);
-        background-color: rgba(0, 0, 0, 0.45);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: #042326;
         justify-content: center;
         height: 50px;
         padding-top: 7px ;
+        padding-right: 28px;
     }
-
-    
-
-
 
     #titulo_pessoal{
         font-size: 35px;
@@ -517,6 +611,44 @@ to {
         margin-left: 15px;
         margin-right: 20px;
         font-size: 16px;
+    }
+    
+    #projetos > h2 {
+        font-size: 35px;
+    }
+    
+    #card {
+        height: 340px;
+        width: 320px;
+    }
+    
+    #card > h3 {
+        font-size: 24px;
+        padding-top: 15px;
+
+    }
+    
+    #card > div > h4 {
+        padding-top: 8px;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    
+    #card > div >p {
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+    
+    #card > div img {
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #gif {
+        margin-left: 75px ;
     }
     
 

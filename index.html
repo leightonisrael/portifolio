@@ -14,8 +14,9 @@
         <header>
             
             <menu class="menu">
-                <a href="#home" id="logo">Leighton</a>
+                <a href="#home" id="logo2">Leighton</a>
                 <nav id="menuBurguer">
+                    <a href="#home" id="logo">Leighton</a>
                     <ul id="guia">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#sobre_mim">Sobre mim</a></li>
@@ -94,27 +95,60 @@
                 Projetos
             </h2>
 
-            <div>
+            <div id="cards">
+                <div id="card">
+                    <h3>
+                        Portifólio
+                    </h3>
+                    <div>
+                        <img src="images/portifolio.png" alt="Imagem do meu portifólio pessoal">
+                    </div>
+                    <div>
+                        <h4> HTML - CSS - JS </h4>
+                        <p>Meu portifólio pessoal criado para me apresentar e apresentar alguns de meus projetos.</p>
+                    </div>
+                </div>
+            
 
-            </div>
-
-            <div>
-
-            </div>
-
-            <div>
-                
+            
+                <div id="card">
+                    <h3>
+                        Login
+                    </h3>
+                    <div>
+                        <img src="images/login-page.png" alt="Imagem de uma página de login criada por mim.">
+                    </div>
+                    <div>
+                        <h4> HTML - CSS </h4>
+                        <p>Página de login criada por mim baseado no projeto do curso de HTML e CSS do Prof. Gustavo Guanabara.</p>
+                    </div>
+                </div>
+            
+                <div id="card">
+                    <h3>
+                        Curiosidades da Tecnologia
+                    </h3>
+                    <div>
+                        <img src="images/curiosidades.png" alt="Imagem do site de curiosidades do bugdroid">
+                    </div>
+                    <div>
+                        <h4> HTML - CSS </h4>
+                        <p>Página de Curiosidades sobre o Android criada por mim baseado no projeto do curso de HTML e CSS do Prof. Gustavo Guanabara.</p>
+                    </div>
+                </div>
+                <div id="card">
+                    <h3>
+                        Em breve novo projeto
+                    </h3>
+                    <div id="gif">
+                    </div>
+                    <div>
+                        <p> Aprendizado constante para ser o que eu venero.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <script>
-        function clickMenu() {
-            if (menuBurguer.style.display == 'block') {
-                menuBurguer.style.display = 'none'
-            } else {
-                menuBurguer.style.display = 'block'
-            }
-        }
-    </script>
+    <script src="script/main.js"></script>
 </body>
 </html>
