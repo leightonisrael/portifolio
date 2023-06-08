@@ -428,9 +428,6 @@ to {
         width: 100%;
         display: none;
         margin-top: 240px;
-        
-        transform: translateY(100%);
-        transition: transform 1s;
     }
 
     #guia {
@@ -515,4 +512,39 @@ to {
     }
     
 
+}
+
+@media screen and (max-width: 530px) {
+    #profile_text {
+        padding-left: 20px;
+    
+    }
+    #profile_text > h1 {
+        font-size: 30px;
+        
+    }
+    
+    #profile_text > span, #profile_text > p {
+        font-size: 18px;
+    }
+
+    #profile_foto {
+        height: 300px;
+        width: 300px; 
+    }
+    
+    #foto_pc {
+        height: 250px;
+        width: 250px;
+    }
+    
+    #foto_pc > img {
+        padding-top: 15%;
+        width: 100%;
+    }
+
+    #texto_pessoal {
+        margin: 0px 40px 40px 20px ;
+        font-size: 18px;
+    }
 }
