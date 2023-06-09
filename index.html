@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porifólio Leighton</title>
+    <title>Porifólio - Israel   Leighton</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <main>
         <header>
-            
             <menu class="menu">
                 <a href="#home" id="logo2">Leighton</a>
                 <nav id="menuBurguer">
@@ -25,9 +25,9 @@
                         <li><a href="#fale_comigo">Fale comigo</a></li>
                     </ul>
                     <ul id="redeSocial">
-                        <li><a href="https://www.instagram.com/israel_leighton/" target="_blank"><img src="images/instagram.svg" alt=""></a></li>
-                        <li><a href="https://github.com/leightonisrael" target="_blank"><img src="images/github.svg" alt="link github"></a></li>
-                        <li><a href="https://br.linkedin.com/in/israel-hall-leighton" target="_blank"> <img src="images/linkedin.svg" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/israel_leighton/" target="_blank"><img id="instagram" src="images/instagram.svg" alt="logo do instagram"></a></li>
+                        <li><a href="https://github.com/leightonisrael" target="_blank"><img id="github" src="images/github.svg" alt="logo do github"></a></li>
+                        <li><a href="https://br.linkedin.com/in/israel-hall-leighton" target="_blank"> <img id="linkedin" src="images/linkedin.svg" alt="logo do linkedin"></a></li>
                     </ul>
                 </nav>
                 <span id="burguer" class="material-icons" onclick="clickMenu()" >menu</span>
@@ -104,12 +104,15 @@
                         <img src="images/portifolio.png" alt="Imagem do meu portifólio pessoal">
                     </div>
                     <div>
-                        <h4> HTML - CSS - JS </h4>
+                        <div id="link-titulo">
+                            <a href="https://github.com/leightonisrael/portifolio" target="_blank"><span class="material-symbols-outlined">code</span></a>
+                            <h4> HTML - CSS - JS </h4>
+                            <a href="https://portifolio-leightonisrael.vercel.app/" target="_blank"><span class="material-symbols-outlined" >visibility</span></a>
+                        </div>
                         <p>Meu portifólio pessoal criado para me apresentar e apresentar alguns de meus projetos.</p>
                     </div>
                 </div>
             
-
             
                 <div id="card">
                     <h3>
@@ -119,7 +122,11 @@
                         <img src="images/login-page.png" alt="Imagem de uma página de login criada por mim.">
                     </div>
                     <div>
-                        <h4> HTML - CSS </h4>
+                        <div id="link-titulo">
+                            <a href="https://github.com/leightonisrael/login-html-css" target="_blank"><span class="material-symbols-outlined">code</span></a>
+                            <h4> HTML - CSS </h4>
+                            <a href="https://leightonisrael.github.io/login-html-css/" target="_blank"><span class="material-symbols-outlined">visibility</span></a>
+                        </div>
                         <p>Página de login criada por mim baseado no projeto do curso de HTML e CSS do Prof. Gustavo Guanabara.</p>
                     </div>
                 </div>
@@ -132,7 +139,11 @@
                         <img src="images/curiosidades.png" alt="Imagem do site de curiosidades do bugdroid">
                     </div>
                     <div>
-                        <h4> HTML - CSS </h4>
+                        <div id="link-titulo">
+                            <a href="https://github.com/leightonisrael/android-html-css" target="_blank"><span class="material-symbols-outlined">code</span></a>
+                            <h4> HTML - CSS </h4>
+                           <a href="https://leightonisrael.github.io/android-html-css/" target="_blank"> <span class="material-symbols-outlined">visibility</span></a>
+                        </div>
                         <p>Página de Curiosidades sobre o Android criada por mim baseado no projeto do curso de HTML e CSS do Prof. Gustavo Guanabara.</p>
                     </div>
                 </div>
@@ -143,10 +154,42 @@
                     <div id="gif">
                     </div>
                     <div>
-                        <p> Aprendizado constante para ser o que eu venero.</p>
+                        <p> Aprendizado constante para virar o que almejo.</p>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="fale_comigo">
+            <div id="contato">
+                <aside>
+                    <h2>Fale comigo!</h2>
+                    <nav>
+                        <a href="mailto: leightonisrael2014@gmail.com" title="Enviar e-mail">
+                            <div id="email">
+                                <img src="images/email.svg" alt="Icone do Email">
+                                <p>
+                                leightonisrael2014@gmail.com
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://t.me/IsraelLeighton" target="_blank">
+                            <div id="telegram">
+                                <img src="images/telegram.svg" alt="Icone do Telegram">
+                                <p>
+                                    Telegram
+                                </p>
+                            </div>
+                        </a>
+                    </nav>
+                </aside>
+                <figure>
+                    <img src="images/celular.png" alt="Celular Imagem">
+                </figure>
+            </div>
+            
+            
         </section>
     </main>
     <script src="script/main.js"></script>

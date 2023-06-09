@@ -96,14 +96,24 @@ body {
 #redeSocial > li > a > img {
     margin-left: 10px;
     margin-right: 10px;
-    background-color: white;
     border-radius: 50%;
 }
-
-#redeSocial > li > a > img:hover {
+#instagram:hover{
     transition: 600ms;
     transform: scale(1.1);
-    background-color: rgb(200, 200, 200);
+    background-color: #405DE6;
+}
+
+#github:hover{
+    transition: 600ms;
+    transform: scale(1.1);
+    background-color: white;
+}
+
+#linkedin:hover {
+    transition: 600ms;
+    transform: scale(1.1);
+    background-color:  #0e76a8 ;
 
 }
 
@@ -388,26 +398,59 @@ to {
     text-shadow: 1px 1px 1px black;
 }
 
-#card > div > h4 {
-    padding-top: 15px;
-    font-size: 25px;
-    text-shadow: 1px 1px 1px black;
-    text-align: center;
-    padding-bottom: 20px;
+#card > div img {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
 }
 
-#card > div >p {
+
+#link-titulo {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+
+#link-titulo h4 {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    padding: 10px;
+}
+
+#link-titulo > a{
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    
+}
+
+#link-titulo > a:hover{
+    color: black;
+
+}
+
+#link-titulo > a > span {
+    background-color: #1D7373;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px black;
+}
+
+#link-titulo > a > span:hover{
+    background-color: white;
+    transition: 600ms;
+}
+
+
+#card > div > p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-#card > div img {
-    padding: 15px;
-    width: 100%;
-    height: 100%;
-}
 
 #gif { 
     background-image: url('../images/loading.png!bw700');
@@ -419,6 +462,119 @@ to {
 }
 
 
+/*-------------------------------FALE COMIGO-----------------------------*/
+
+#fale_comigo {
+    
+    background-color: #0A3A40;
+    height: 100%;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+#contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 100px;
+    
+}
+
+#contato > aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+    
+    
+    
+}
+
+#contato > aside > h2 {
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+#contato > aside > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+#contato > aside nav a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px .5px 1px black;
+    font-weight: 500;
+}
+
+#contato > aside > nav > a > div {
+    height: 100px;
+    width: 300px;
+    background-color: #042326;
+    text-align: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px black;
+    border: .5px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    transition: 600ms;
+}
+
+#contato > aside > nav > a > div:hover{
+    
+    transform: scale(1.01);
+    background-color: #228989;
+    transition: 600ms;
+    color: black;
+    
+}
+
+#telegram {
+    display: flex;
+    justify-content: space-around;
+}
+
+#telegram > p {
+    padding-right: 50px;
+}
+
+#email {
+    display: flex;
+    justify-content: space-around;
+}
+
+#email > img {
+    height: 48px;
+    width: 40px;
+}
+
+
+#contato > figure {
+    height: 400px;
+    width: 400px;
+    
+}
+
+#contato > figure > img {
+    background-color: #1D7373;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 2px 2px 4px black;
+    transition: 600ms;
+}
+
+#contato > figure > img:hover{
+    transform: translateX(1%);
+    transition: 600ms;
+    background-color: #1d73737e;
+}
 
 
 
@@ -696,4 +852,38 @@ to {
     #gif {
         margin-left: 45px ;
     }
+
+    #contato > figure {
+        height: 300px;
+        width: 300px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+
+    #profile_text {
+        padding-right: 50px;
+    
+    }
+    #profile_text > h1 {
+        font-size: 25px;
+        
+    }
+    
+    #profile_text > span, #profile_text > p {
+        font-size: 13px;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 15rem;
+        }
+    }
+    
+   
 }
