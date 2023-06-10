@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body onresize="mudouTamanho()"> 
     <main>
         <header>
             <menu class="menu">
@@ -19,14 +19,14 @@
                 <nav id="menuBurguer">
                     <a href="#home" id="logo">Leighton</a>
                     <ul id="guia">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre_mim">Sobre mim</a></li>
-                        <li><a href="#conhecimentos">Conhecimentos</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#fale_comigo">Fale comigo</a></li>
+                        <li><a c href="#home" onclick="clickMenu()">Home</a></li>
+                        <li><a href="#sobre_mim" onclick="clickMenu()">Sobre mim</a></li>
+                        <li><a href="#conhecimentos" onclick="clickMenu()">Conhecimentos</a></li>
+                        <li><a href="#projetos" onclick="clickMenu()">Projetos</a></li>
+                        <li><a href="#fale_comigo" onclick="clickMenu()">Fale comigo</a></li>
                     </ul>
                     <ul id="redeSocial">
-                        <li><a href="https://www.instagram.com/israel_leighton/" target="_blank" title="Instagram"><img id="instagram" src="images/instagram.svg" alt="logo do instagram"></a></li>
+                        <li><a href="https://www.instagram.com/israel_leighton/" target="_blank" title="Instagram"> <img id="instagram" src="images/instagram.svg" alt="logo do instagram"></a></li>
                         <li><a href="https://github.com/leightonisrael" target="_blank" title="Github"><img id="github" src="images/github.svg" alt="logo do github"></a></li>
                         <li><a href="https://br.linkedin.com/in/israel-hall-leighton" target="_blank" title="Linkedin"> <img id="linkedin" src="images/linkedin.svg" alt="logo do linkedin"></a></li>
                     </ul>
@@ -58,7 +58,7 @@
                 </h2>
                 
                 <p id="texto_pessoal"> 
-                    Meu nome é Israel Hall Leighton, tenho 20 (vinte) anos de idade e curso Tecnologia da Informação (T.I) na Universidade Federal do Rio Grande do Norte (UFRN). Amante da programação e novas tecnologias. Sou um Desenvolvedor Web Front-End em formação, pretendendo ser um Desenvolvedor FullStack em um futuro próximo. 
+                    Meu nome é Israel Hall Leighton, tenho 20 (vinte) anos de idade e curso Tecnologia da Informação (T.I) na Universidade Federal do Rio Grande do Norte (UFRN). Amante da programação e das novas tecnologias. Sou um Desenvolvedor Web Front-End em formação, pretendendo ser um Desenvolvedor FullStack em um futuro próximo. 
                 </p>
             </div>
         </section>
@@ -155,7 +155,7 @@
                     <div id="gif">
                     </div>
                     <div>
-                        <p> Aprendizado constante para virar o que almejo.</p>
+                        <p> Aprendizado constante para tornar o que almejo.</p>
                     </div>
                 </div>
             </div>
